@@ -167,8 +167,8 @@ export default {
       })
     },
     async sendRequest(data){
-      console.log({data: JSON.stringify({data}), source: 'shola_friend'});
-      let data2 = {source: 'shola_friend', ...data}
+      console.log({data: JSON.stringify({data}), source: 'zhem_friend'});
+      let data2 = {source: 'zhem_friend', ...data}
       axios.post('https://alimizainab.herokuapp.com/api/v1/users', {data: JSON.stringify({data2})}).then(response =>{
         console.log(response);
       })
